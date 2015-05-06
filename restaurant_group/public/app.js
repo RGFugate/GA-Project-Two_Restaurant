@@ -6,6 +6,26 @@ console.log("Server Linked");
 
 //read
 //GET restaurant names from json.  Put names to mustache template and contain within a button.
+
+
+	
+$.ajax ({
+	type: "GET",
+	url: "/restaurants",
+	success: function(data) {
+		$.each(data, function(i, items) {
+			var $list = $("#list");
+			//var template = $("#btn_template").text();
+			var template = "<details><summary>{{name}}</summary><a>MENU</a><a>INFO</a><a>EDIT</a></details>";
+			var html = Mustache.render(template, data[i].name);
+				
+			//$list.append(data[i].name)
+			$list.append(html);
+		})
+	}
+})
+
+
 /*$(function() {
 	
 	var $list = $("#list");
@@ -49,9 +69,13 @@ $("#populate").on("click", function() {
 */
 //read
 //Another attempt at GET list for LIST div.
-
-$.getJSON("./restaurant_db.json", function data)
-
+/*
+$.getJSON("./restaurant_db.json", function data) {
+	var template = $('script[data-id="btn_template"]').text();
+	var replace = Mustache.render(template, data);
+	$("#list").html(replace);
+}
+*/
 
 
 
