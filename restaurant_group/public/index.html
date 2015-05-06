@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="./style2.css">
+  <title>Restaurant Empire</title>
+
+</head>
+
+<body>
+  
+    <div id="container">
+    
+      <div id="header">
+        <h2>Restaurant Empire</h2>
+      </div>
+    
+    <div id="nav">
+      <div id="list">
+  		  <details>
+			   <summary data-attr="name">{{Name}}</summary>
+			   <a href="#">MENU</a>
+			   <a href="#">INFO</a>
+			   <a href="#">EDIT</a>
+			 </details>
+      </div>
+
+      <div id="about">
+        <button id="create">ADD NEW</button>
+        <button id="dev">ABOUT</button>
+      </div>   
+    </div>
+
+    <div id="content">
+      <h2></h2>
+    </div>
+
+    <footer id="footer">
+      <button id="populate">Push For List</button>
+    </footer>
+    
+    </div>
+
+  
+
+<!--Templates-->
+
+    <script type="text/template" data-id="addNew"/>
+      <form method="POST" action="/restaurants" method="PUT">
+        <input type="text" name="name" value="{{NAME}}">
+        <input type="text" name="location" value="{{Location}}">
+        <input type="text" name="cuisine" value="{{Cuisine}}">
+        <input type="text" name="location" value="{{Location}}">
+        
+        <button type="submit">Add New Restaurant</button>
+      </form>
+    </script>
+
+
+
+
+    <script type="text/template" data-id="btn_template"/>
+  	</script>
+
+<!--Scripts-->
+
+  	<script type="text/javascript" src="../bower_components/jquery/dist/jquery.js"></script>
+  	<script type="text/javascript" src="../bower_components/mustache/mustache.js"></script>
+  	<script type="text/javascript" src="./app.js"></script>
+
+</body>
+
+</html>

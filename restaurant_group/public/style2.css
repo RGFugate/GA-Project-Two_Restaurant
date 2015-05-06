@@ -1,0 +1,134 @@
+body {
+	
+	display: inline-block;
+	margin: 0px;
+	border: black 5px solid;
+	background-color: black;
+	color: white;
+}
+
+body > div  {
+	border: white 3px solid;
+	border-radius: 7px;
+}
+
+#header {
+	height: 20vh;
+	width: 98vw;
+	background-image: url("https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT-qLHTQEx0bodZnCJV9CBjPEYcYu1qZjWkq3F5yCHpWRYKv3SR");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	border: white 2px solid;
+}
+
+#header > h2 {
+	font-size: 8vh;
+	margin-left: 5vw;
+	text-shadow: 4px 4px black;
+}
+
+#nav {
+	width: 20vw;
+	height: 65vh;
+	float: left;
+	border: white 2px solid;
+}
+
+#list {
+	margin: 0px;
+	width: auto;
+	height: 45vh;
+}
+
+#list > details > summary {
+	cursor: pointer;
+	background: LightBlue;
+	margin: 1vw 1vw .5vw 1vw;
+	padding: 8px;
+	color: black;
+	border-radius: 5px;
+	transition: background .5s linear 0s, color .5s linear 0s;
+}
+
+#list > details > summary:hover {
+	background: Purple;
+	font-weight: bold;
+	color: white;
+}
+
+#list > details > a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.5vw;
+	margin: 1vh 2vw .5vh 8vw;
+	padding: 5px;
+	background: LightGreen;
+	border-radius: 7px;
+	transition: background .5s linear 0s, color .3s linear 0s;
+}
+
+#list > details > a:hover {
+	background: Purple;
+	font-weight: bold;
+	color: white;
+}
+
+#about {
+	width: auto;
+	height: 18vh;
+	margin: 0px;
+}
+
+#about > button {
+	width: 15vw;
+	display: block;
+	cursor: pointer;
+	background: LightBlue;
+	margin: 5vh auto ;
+	padding: 2px;
+	color: black;
+	font-size: 1.5vw;
+	border-radius: 5px;
+	transition: background .5s linear 0s, color .5s linear 0s;
+}
+
+#about > button:hover {
+	background: Purple;
+	font-weight: bold;
+	color: white;
+}
+
+#content {
+	width: 77.5vw;
+	height: 65vh;
+	float: block;
+	margin-left: 20.7%;
+}
+
+#footer {
+	clear: both;
+	width: 98vw;
+	height: 10vh;
+	background-color: LightGrey;
+	border: white 2px solid;
+}
+
+#footer > button {
+
+	cursor: pointer;
+	background: LightBlue;
+	margin:2vw 0vw 2vw 3vw;
+	padding: 5px;
+	color: black;
+	font-size: 2vw;
+	border-radius: 5px;
+	transition: background .5s linear 0s, color .5s linear 0s;
+}
+
+#footer > button:hover {
+	background: Purple;
+	font-weight: bold;
+	color: white;
+
